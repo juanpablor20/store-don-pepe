@@ -2,7 +2,7 @@ import { ConflictException, Injectable, Logger, NotFoundException, OnModuleInit 
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { PrismaClient, User } from '@prisma/client';
-import { PaginationDto } from 'src/common';
+import { PaginationDto } from 'src/core';
 import * as bcrypt from 'bcrypt';
 @Injectable()
 export class UsersService extends PrismaClient implements OnModuleInit {

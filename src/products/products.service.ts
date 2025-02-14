@@ -3,7 +3,7 @@ import { Injectable, Logger, NotFoundException, OnModuleInit } from '@nestjs/com
 import { CreateProductDto } from './dto/create-product.dto';
 import { UpdateProductDto } from './dto/update-product.dto';
 import { PrismaClient } from '@prisma/client';
-import { PaginationDto } from 'src/common';
+import { PaginationDto } from 'src/core';
 
 @Injectable()
 export class ProductsService extends PrismaClient implements OnModuleInit{
